@@ -1,0 +1,9 @@
+apiVersion: v2
+name: k10-config
+description: A Helm chart for initial K10 Configuration
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+maintainers:
+- email: pcerda@gmail.com
+  name: Patricio Cerda

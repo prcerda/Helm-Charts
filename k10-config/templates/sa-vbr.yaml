@@ -1,0 +1,7 @@
+apiVersion: v1
+kind:   ServiceAccount
+metadata:
+  name: vbr-kasten-sa
+  namespace: kasten-io
+secrets:
+  - name: vbr-kasten-secret
