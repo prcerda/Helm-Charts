@@ -2,11 +2,19 @@ apiVersion: v1
 entries:
   aws-csi-eks:
   - apiVersion: v2
-    appVersion: 0.1.0
-    description: A Helm chart for creating Azure AKS VolumeSnapshotClass compatible
-      with K10
+    appVersion: 0.1.1
+    description: A Helm chart for creating AWS EKS StorageClass and VolumeSnapshotClass
     name: aws-csi-eks
     type: application
     urls:
-    - aws-csi-eks-0.1.0.tgz
-    version: 0.1.0
+    - aws-csi-eks-0.1.1.tgz
+    version: 0.1.1
+  aws-s3-locprofile:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    description: A Helm chart for creating Kasten K10 Location Profile based on AWS S3 Bucket
+    name: aws-csi-eks
+    type: application
+    urls:
+    - aws-s3-locprofile-0.1.0.tgz
+    version: 0.1.0    
