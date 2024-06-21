@@ -1,0 +1,9 @@
+apiVersion: v2
+name: aws-s3-locprofile
+description: A Helm chart to create a Kasten Location Profile
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+maintainers:
+- email: pcerda@gmail.com
+  name: Patricio Cerda
