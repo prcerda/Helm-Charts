@@ -1,20 +1,19 @@
 apiVersion: config.kio.kasten.io/v1alpha1
 kind: Profile
 metadata:
-  name: "profile-awss3-{{ .Values.bucketname }}"
+  name: "profile-azblob-{{ .Values.K10Location.bucketname }}"
   namespace: kasten-io
 spec:
   type: Location
   locationSpec:
     credential:
-      secretType: AwsAccessKey
+      secretType: AzStorageAccount
       secret:
         apiVersion: v1
         kind: Secret
-        name: "k10-awss3-{{ .Values.bucketname }}-secret"
+        name: "k10-azblob-{{ .Values.K10Location.bucketname }}-secret"
         namespace: kasten-io
     type: ObjectStore
     objectStore:
-      name: "{{ .Values.bucketname }}"
-      objectStoreType: S3
-      region: "{{ .Values.region }}"
+      name: "{{ .Values.K10Location.bucketname }}"
+      objectStoreType: AZ

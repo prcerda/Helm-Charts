@@ -9,6 +9,15 @@ entries:
     urls:
     - aws-csi-eks-0.1.1.tgz
     version: 0.1.1
+  az-volumesnapclass:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    description: A Helm chart for creating VolumeSnapshotClass
+    name: az-volumesnapclass
+    type: application
+    urls:
+    - az-volumesnapclass-0.1.0.tgz
+    version: 0.1.1
   aws-s3-locprofile:
   - apiVersion: v2
     appVersion: 0.1.0
@@ -17,6 +26,15 @@ entries:
     type: application
     urls:
     - aws-s3-locprofile-0.1.0.tgz
+    version: 0.1.0
+  az-blob-locprofile:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    description: A Helm chart for creating Kasten K10 Location Profile based on Azure Blob
+    name: az-blob-locprofile
+    type: application
+    urls:
+    - az-blob-locprofile-0.1.0.tgz
     version: 0.1.0
   k10-config:
   - apiVersion: v2

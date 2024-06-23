@@ -1,0 +1,5 @@
+volumeSnapshotClass:
+  name: csi-azuredisk-vsc
+  driver: disk.csi.azure.com
+  deletePolicy: Delete
+  incremental: true
