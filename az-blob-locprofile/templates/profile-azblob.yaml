@@ -15,5 +15,7 @@ spec:
         namespace: kasten-io
     type: ObjectStore
     objectStore:
-      name: "{{ .Values.K10Location.bucketname }}"
+      name: "k10"
       objectStoreType: AZ
+      pathType: "Directory"
+
