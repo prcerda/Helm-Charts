@@ -1,0 +1,4 @@
+volumeSnapshotClass:
+  name: csi-gcedisk-vsc
+  driver: pd.csi.storage.gke.io
+  deletePolicy: Delete

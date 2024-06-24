@@ -1,0 +1,20 @@
+apiVersion: config.kio.kasten.io/v1alpha1
+kind: Profile
+metadata:
+  name: "profile-gcs-{{ .Values.bucketname }}"
+  namespace: kasten-io
+spec:
+  type: Location
+  locationSpec:
+    credential:
+      secretType: GcpServiceAccountKey
+      secret:
+        apiVersion: v1
+        kind: Secret
+        name: "k10-gcs-{{ .Values.bucketname }}-secret"
+        namespace: kasten-io
+    type: ObjectStore
+    objectStore:
+      name: "{{ .Values.bucketname }}"
+      objectStoreType: GCS
+      region: "{{ .Values.region }}"

@@ -18,6 +18,15 @@ entries:
     urls:
     - az-volumesnapclass-0.1.0.tgz
     version: 0.1.0
+  gc-volumesnapclass:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    description: A Helm chart for creating VolumeSnapshotClass
+    name: gc-volumesnapclass
+    type: application
+    urls:
+    - gc-volumesnapclass-0.1.0.tgz
+    version: 0.1.0
   aws-s3-locprofile:
   - apiVersion: v2
     appVersion: 0.1.0
@@ -35,6 +44,15 @@ entries:
     type: application
     urls:
     - az-blob-locprofile-0.1.0.tgz
+    version: 0.1.0
+  gcs-locprofile:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    description: A Helm chart for creating Kasten K10 Location Profile based on Google Cloud Storage
+    name: gcs-locprofile
+    type: application
+    urls:
+    - gcs-locprofile-0.1.0.tgz
     version: 0.1.0
   k10-config:
   - apiVersion: v2

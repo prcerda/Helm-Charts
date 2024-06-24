@@ -1,6 +1,6 @@
 apiVersion: v2
-name: az-volumesnapclass
-description: A Helm chart to create a Volume Snapshot Class for Azure Disks CSI Driver
+name: gcs-locprofile
+description: A Helm chart to create a Kasten Location Profile
 type: application
 version: 0.1.0
 appVersion: "0.1.0"
