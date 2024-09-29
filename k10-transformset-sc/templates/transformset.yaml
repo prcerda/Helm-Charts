@@ -1,0 +1,15 @@
+kind: TransformSet
+apiVersion: config.kio.kasten.io/v1alpha1
+metadata:
+  name: transform-dr-storageclass
+spec:
+  comment: |
+    Modify the storageClass to change storage tier.
+  transforms:
+    - subject:
+        resource: persistentvolumeclaims
+      name: ChangeStorageClass
+      json:
+        - op: replace
+          path: /spec/storageClassName
+          value: "{{ .Values.storageclass }}"

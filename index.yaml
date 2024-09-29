@@ -63,3 +63,12 @@ entries:
     urls:
     - k10-config-0.1.0.tgz
     version: 0.1.0
+  k10-transformset-sc:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    description: A Helm chart for K10 TransformSet creation
+    name: k10-transformset-sc
+    type: application
+    urls:
+    - k10-transformset-sc-0.1.0.tgz
+    version: 0.1.0
