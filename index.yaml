@@ -72,3 +72,12 @@ entries:
     urls:
     - k10-transformset-sc-0.1.0.tgz
     version: 0.1.0
+  pacman:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    description: A Helm chart to deploy Pacman demo app
+    name: pacman
+    type: application
+    urls:
+    - pacman-0.1.0.tgz
+    version: 0.1.0
