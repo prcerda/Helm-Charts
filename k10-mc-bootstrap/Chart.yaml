@@ -1,0 +1,6 @@
+apiVersion: v2
+name: k10-mc-bootstrap
+description: A Helm chart to bootstrap Kasten primary cluster
+type: application
+version: 0.1.0
+appVersion: "0.1.0"

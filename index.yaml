@@ -81,3 +81,12 @@ entries:
     urls:
     - pacman-0.1.0.tgz
     version: 0.1.0
+  k10-mc-bootstrap:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    description: A Helm chart to bootstrap Kasten primary cluster
+    name: k10-mc-bootstrap
+    type: application
+    urls:
+    - k10-mc-bootstrap-0.1.0.tgz
+    version: 0.1.0
