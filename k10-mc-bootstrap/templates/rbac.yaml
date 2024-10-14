@@ -1,0 +1,13 @@
+apiVersion: auth.kio.kasten.io/v1alpha1
+kind: K10ClusterRoleBinding
+metadata:
+  name: admin-all-clusters
+  namespace: kasten-io-mc
+spec:
+  k10ClusterRole: k10-multi-cluster-admin
+  clusters:
+    - selector: ""
+  subjects:
+    - apiGroup: rbac.authorization.k8s.io
+      name: k10-admin
+      kind: User
