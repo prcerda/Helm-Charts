@@ -5,7 +5,7 @@ metadata:
   annotations:
     source: "https://github.com/saintdle/pacman-tanzu"
   labels:
-    app: stock-demo
+    app: mongo
 spec:
   replicas: 1
   selector:
