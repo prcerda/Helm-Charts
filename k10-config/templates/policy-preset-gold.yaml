@@ -20,11 +20,11 @@ spec:
       monthly: 0
       yearly: 0
     profile:
-      name: "profile-{{ .Values.buckettype }}-{{ .Values.bucketname }}"
+      name: "{{ .Values.clustername }}-{{ .Values.bucketname }}" 
       namespace: kasten-io
   export:
     profile:
-      name: "profile-{{ .Values.buckettype }}-{{ .Values.bucketname }}"
+      name: "{{ .Values.clustername }}-{{ .Values.bucketname }}"
       namespace: kasten-io
     retention:
       daily: 7

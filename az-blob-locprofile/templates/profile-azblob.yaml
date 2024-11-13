@@ -1,7 +1,7 @@
 apiVersion: config.kio.kasten.io/v1alpha1
 kind: Profile
 metadata:
-  name: "profile-azblob-{{ .Values.K10Location.bucketname }}"
+  name: "{{ .Values.K10Location.clustername }}-{{ .Values.K10Location.bucketname }}"
   namespace: kasten-io
 spec:
   type: Location

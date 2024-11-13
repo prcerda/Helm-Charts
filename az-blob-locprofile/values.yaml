@@ -1,4 +1,5 @@
 K10Location:
   bucketname: ""
+  clustername: ""
   azure_storage_env: ""
   azure_storage_key: ""
