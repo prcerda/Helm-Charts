@@ -1,7 +1,7 @@
 apiVersion: config.kio.kasten.io/v1alpha1
 kind: Profile
 metadata:
-  name: "profile-gcs-{{ .Values.bucketname }}"
+  name: "{{ .Values.K10Location.clustername }}-{{ .Values.K10Location.bucketname }}"
   namespace: kasten-io
 spec:
   type: Location
@@ -11,10 +11,10 @@ spec:
       secret:
         apiVersion: v1
         kind: Secret
-        name: "k10-gcs-{{ .Values.bucketname }}-secret"
+        name: "k10-gcs-{{ .Values.K10Location.bucketname }}-secret"
         namespace: kasten-io
     type: ObjectStore
     objectStore:
-      name: "{{ .Values.bucketname }}"
+      name: "{{ .Values.K10Location.bucketname }}"
       objectStoreType: GCS
-      region: "{{ .Values.region }}"
+      region: "{{ .Values.K10Location.region }}"

@@ -1,4 +1,6 @@
-bucketname : ""
-projectid: ""
-gcekey: ""
-region: ""
+K10Location:
+  bucketname: ""
+  clustername: ""
+  projectid: ""
+  gcekey: ""
+  region: ""
