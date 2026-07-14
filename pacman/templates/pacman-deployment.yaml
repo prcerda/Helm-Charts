@@ -15,7 +15,7 @@ spec:
         name: pacman
     spec:
       containers:
-      - image: quay.io/ifont/pacman-nodejs-app:latest
+      - image: docker.io/saintdle/pacman@sha256:d1c36678cd8cb7c4a0ea7c80f8161ec39c899da20c4328d0dc4ff21ada762198
         name: pacman
         ports:
         - containerPort: 8080
